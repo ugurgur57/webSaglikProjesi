@@ -9,6 +9,7 @@
                 <asp:ImageButton ID="imgResim1" runat="server" ImageUrl='<%#Eval("urunresimyolu1") %>' Width="100px" Height="120px" AlternateText='<%#Eval("urunad") %>' CommandName="detay" CommandArgument='<%#Eval("urunid") %>' /><br />
                 <asp:Label ID="lblFiyat" runat="server" Text='<%#Eval("urunfiyat", "{0:C}") %>'></asp:Label>&nbsp;
                 <asp:TextBox ID="txtAdet" runat="server" TextMode="Number" Width="26px" Text="1" ></asp:TextBox><br />
+                <asp:ImageButton ID="btnSepeteAt" ImageUrl="~/Content/style/images/btnSepeteAt.png" runat="server" CommandName="sepet" CommandArgument='<%#Eval("urunid") %>' />
             </div>
         </ItemTemplate>
     </asp:DataList>
